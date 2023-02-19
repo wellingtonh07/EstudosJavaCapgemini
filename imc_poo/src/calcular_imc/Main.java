@@ -1,6 +1,6 @@
 package calcular_imc;
 
-//Importando o input
+//Ajuda na leitura dos dados informados
 import java.util.Scanner;
 
 public class Main {
@@ -9,11 +9,11 @@ public class Main {
 		
 		//Criando um objeto. Vai herdar peso e altura da classe pessoa.
 		Pessoa objetoPessoa = new Pessoa();
-		//Para o usuário responder depois
+		//Faz a leitura do que o usuário escreve no teclado
 		Scanner leitor = new Scanner(System.in);
 		
 		System.out.println("Peso da pessoa: ");
-		//Dados ficarão guardados em setPeso da classe Pessoa
+		//Dados ficarão guardados em setPeso e setAltura da classe Pessoa
 		objetoPessoa.setPeso(leitor.nextFloat());
 		System.out.println("Altura da pessoa :");
 		objetoPessoa.setAltura(leitor.nextFloat());
